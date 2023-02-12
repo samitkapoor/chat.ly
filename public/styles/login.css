@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(27, 160, 158);
-    --accent-color: rgb(222, 16, 5);
+    --accent-color: rgb(244, 86, 50);
     --background-color: rgb(46, 40, 42);
     --secondary-color: rgb(237, 184, 139);
     --tertiary-color: rgb(250, 216, 214);
@@ -123,7 +123,7 @@ form button {
 
 form button:hover {
     padding: 10px 70px;
-    background-color: rgb(197, 13, 4);
+    background-color: rgb(228, 80, 47);
 }
 
 form button:active {
