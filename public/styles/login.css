@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(27, 160, 158);
-    --accent-color: rgb(222, 16, 5);
+    --accent-color: rgb(244, 86, 50);
     --background-color: rgb(46, 40, 42);
     --secondary-color: rgb(237, 184, 139);
     --tertiary-color: rgb(250, 216, 214);
@@ -26,7 +26,7 @@ body {
     justify-content: center;
 }
 
-
+/* the full login card with heading and form */
 .card-container {
     width: 500px;
 
@@ -41,6 +41,7 @@ body {
     align-items: center;
 }
 
+/* chat.ly */
 .heading {
     width: 100%;
     box-sizing: border-box;
@@ -56,6 +57,7 @@ body {
     color: var(--secondary-color);
 }
 
+/* form below the heading in teal background color */
 form {
     box-sizing: border-box;
     padding-top: 25px;
@@ -67,6 +69,7 @@ form {
     gap: 20px;
 }
 
+/* text above the input field */
 form .label {
     color: var(--secondary-color);
     font-weight: 600;
@@ -106,9 +109,9 @@ form button {
     align-self: end;
 
     margin-top: 15px;
-    padding: 10px 65px;
+    padding: 10px 55px;
 
-    border-radius: 10px;
+    border-radius: 60px;
     outline: none;
     border: none;
 
@@ -122,10 +125,136 @@ form button {
 }
 
 form button:hover {
-    padding: 10px 70px;
-    background-color: rgb(197, 13, 4);
+    padding: 10px 60px;
+    background-color: rgb(228, 80, 47);
 }
 
 form button:active {
-    padding: 10px 65px;
+    padding: 10px 55px;
+}
+
+@media (max-width: 900px) {
+
+    /* the full login card with heading and form */
+    .card-container {
+        width: 450px;
+    }
+
+    /* chat.ly */
+    .heading {
+        padding: 15px 0px;
+        font-size: 54px;
+    }
+
+    /* text above the input field */
+    form .label {
+        font-size: 15px;
+    }
+
+    form input {
+        padding: 8px 8px;
+
+        font-size: 16px;
+    }
+
+    form input:focus {
+        padding: 7px 7px;
+    }
+
+    form button {
+        margin-top: 10px;
+        padding: 10px 40px;
+        border-radius: 40px;
+
+        font-size: 14px;
+    }
+
+    form button:hover {
+        padding: 10px 45px;
+    }
+
+    form button:active {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 625px) {
+
+    /* the full login card with heading and form */
+    .card-container {
+        width: 400px;
+    }
+
+    /* chat.ly */
+    .heading {
+        padding: 12px 0px;
+        font-size: 44px;
+    }
+
+    /* text above the input field */
+    form .label {
+        font-size: 15px;
+    }
+
+    form input {
+        padding: 7px 7px;
+    }
+
+    form input:focus {
+        padding: 6px 6px;
+    }
+
+    form button {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* the full login card with heading and form */
+    .card-container {
+        width: 300px;
+    }
+
+    /* chat.ly */
+    .heading {
+        padding: 10px 0px;
+        font-size: 32px;
+    }
+
+    form {
+        gap: 10px;
+        padding: 12px 12px;
+    }
+
+    /* text above the input field */
+    form .label {
+        font-size: 12px;
+    }
+
+    form input {
+        padding: 6px 6px;
+
+        font-size: 14px;
+    }
+
+    form input:focus {
+        padding: 5px 5px;
+    }
+
+    form button {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding: 8px 35px;
+
+        font-size: 12px;
+    }
+
+    form button:hover {
+        padding: 8px 35px;
+    }
+
+    form button:active {
+        padding: 6px 30px;
+    }
 }
