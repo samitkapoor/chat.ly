@@ -1,9 +1,8 @@
 :root {
-    --primary-color: rgb(27, 160, 158);
-    --accent-color: rgb(244, 86, 50);
-    --background-color: rgb(46, 40, 42);
-    --secondary-color: rgb(237, 184, 139);
-    --tertiary-color: rgb(250, 216, 214);
+    --primary-color: rgb(78, 205, 196);
+    --accent-color: rgb(255, 255, 255);
+    --background-color: rgb(41, 47, 54);
+    --secondary-color: rgb(255, 107, 107);
 }
 
 * {
@@ -69,9 +68,14 @@ form {
     gap: 20px;
 }
 
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
 /* text above the input field */
-form .label {
-    color: var(--secondary-color);
+form label {
+    color: var(--accent-color);
     font-weight: 600;
     font-size: 16px;
     margin-left: 7px;
@@ -89,7 +93,7 @@ form input {
 
     font-size: 18px;
     font-weight: 600;
-    color: var(--tertiary-color);
+    color: var(--accent-color);
 
     cursor: text;
 
@@ -147,7 +151,7 @@ form button:active {
     }
 
     /* text above the input field */
-    form .label {
+    form label {
         font-size: 15px;
     }
 
@@ -192,7 +196,7 @@ form button:active {
     }
 
     /* text above the input field */
-    form .label {
+    form label {
         font-size: 15px;
     }
 
@@ -228,7 +232,7 @@ form button:active {
     }
 
     /* text above the input field */
-    form .label {
+    form label {
         font-size: 12px;
     }
 
