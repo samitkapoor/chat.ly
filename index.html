@@ -12,12 +12,24 @@
       <p class="heading">chat.ly</p>
       <form autocomplete="off" action="public/chat.html">
         <div class="field">
-          <p class="label">username</p>
-          <input type="text" placeholder="enter username" />
+          <label class="label">username</label>
+          <input
+            required
+            name="username"
+            id="username-input"
+            type="text"
+            placeholder="enter username"
+          />
         </div>
         <div class="field">
-          <p class="label">room</p>
-          <input type="text" placeholder="enter room name" />
+          <label class="label">room</label>
+          <input
+            required
+            name="roomname"
+            id="roomname-input"
+            type="text"
+            placeholder="enter room name"
+          />
         </div>
         <button type="submit">Continue</button>
       </form>
