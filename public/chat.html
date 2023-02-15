@@ -7,7 +7,15 @@
     <title>Chat</title>
 
     <link rel="stylesheet" href="./styles/chat.css" />
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"
+      integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="socket.io/socket.io.js"></script>
+    <script defer src="scripts/main.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/885853d9e4.js"
@@ -17,189 +25,25 @@
   <body>
     <main>
       <div class="members-joined">
-        <div class="topic">joined members</div>
-        <div class="members">
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-          <div class="member">John Cena</div>
-          <div class="member">Tony Stark</div>
-        </div>
+        <div class="topic">Joined members</div>
+        <div id="members" class="members"></div>
       </div>
       <div class="chat-area">
-        <header>room name</header>
-        <div class="chat-messages">
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-          <div class="message-holder">
-            <div class="about">
-              <div class="name">John Cena</div>
-              <div class="time">12:00 am</div>
-            </div>
-            <div class="message">You can't see me</div>
-          </div>
-        </div>
+        <header id="room-name"></header>
+        <div id="chat-messages" class="chat-messages"></div>
         <footer>
-          <div class="input-field">
+          <form autocomplete="off" id="chat-form" class="input-field">
             <input
               type="text"
               name="chat-message"
-              id="chat-message"
+              id="chatMessage"
+              required
               placeholder=""
             />
-            <i class="fa-solid fa-paper-plane submit-icon"></i>
-          </div>
+            <button>
+              <i class="fa-solid fa-paper-plane submit-icon"></i>
+            </button>
+          </form>
         </footer>
       </div>
     </main>

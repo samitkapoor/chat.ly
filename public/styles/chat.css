@@ -200,12 +200,20 @@ footer {
     margin-right: 40px;
 }
 
-.submit-icon {
+.input-field button {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
 
     position: absolute;
+    top: 6px;
     right: 15px;
 
     font-size: 30px;
     color: black;
+}
+
+.input-field button i {
+    cursor: pointer;
 }
