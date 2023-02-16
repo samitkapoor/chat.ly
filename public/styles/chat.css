@@ -64,11 +64,12 @@ main {
     justify-content: start;
     box-sizing: border-box;
     padding-left: 30px;
+    padding-right: 30px;
 
     background-color: var(--primary-color);
 
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
 
     color: rgb(41, 47, 54);
 
@@ -102,7 +103,7 @@ header {
 
     text-align: center;
     color: var(--primary-color);
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -216,4 +217,50 @@ footer {
 
 .input-field button i {
     cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    main {
+        grid-template-columns: 35vw 65vw;
+    }
+
+    .members-joined {
+        grid-template-rows: 80px 1fr;
+    }
+
+    .topic {
+        height: 80px;
+        font-size: 26px;
+    }
+
+    .member {
+        margin: 25px;
+        font-size: 18px;
+    }
+
+    .chat-area {
+        grid-template-rows: 80px 1fr 100px;
+    }
+
+    header {
+        height: 80px;
+        font-size: 26px;
+    }
+
+    /* the text inside the message card */
+    .message {
+        font-size: 18px;
+    }
+
+    /* name of the messenger and the time at which he sent the message */
+    .about {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    main {
+        grid-template-columns: 00vw 100vw;
+    }
 }
