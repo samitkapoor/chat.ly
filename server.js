@@ -24,7 +24,10 @@ io.on("connection", (socket) => {
     socket.join(user.roomname);
 
     // welcome the current user
-    socket.emit("message", formatMessage(botName, "Welcome to Chat.ly!"));
+    socket.emit(
+      "message",
+      formatMessage(botName, `Welcome to ${user.roomname}`)
+    );
 
     // broadcast when a user joins
     socket.broadcast
