@@ -146,7 +146,7 @@ header {
 /* the whole card that holds the message */
 .message-holder {
     height: auto;
-    width: 1fr;
+    width: auto;
     box-sizing: border-box;
     padding: 10px 10px;
     margin: 10px 30px;
