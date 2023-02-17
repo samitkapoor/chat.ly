@@ -14,6 +14,8 @@ socket.emit("joinRoom", { username, roomname });
 
 socket.on("message", (msg) => {
   outputMessage(msg);
+
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 
 socket.on("roomUsers", ({ roomname, users }) => {
