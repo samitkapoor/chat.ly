@@ -67,6 +67,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => {
+module.exports = server.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 });
