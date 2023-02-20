@@ -30,11 +30,11 @@ body {
 }
 
 main {
-    height: 80%;
-    width: 80%;
+    height: 650px;
+    width: 1300px;
 
     display: grid;
-    grid-template-columns: 20vw 80vw;
+    grid-template-columns: 300px 1000px;
     gap: 20px;
 
     background-color: transparent;
@@ -46,9 +46,9 @@ main {
 }
 
 .members-joined {
-    height: 85%;
+    height: 500px;
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 80px 420px;
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
 
@@ -100,7 +100,7 @@ main {
 
 .chat-area {
     height: 100%;
-    width: 1000px;
+    width: 980px;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     background-color: rgb(201, 221, 251);
@@ -245,48 +245,120 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 1050px) {
+@media(max-width: 1350px) {
     main {
-        grid-template-columns: 35vw 65vw;
-    }
+        width: 1000px;
 
-    .members-joined {
-        grid-template-rows: 80px 1fr;
-    }
-
-    .topic {
-        height: 80px;
-        font-size: 26px;
-    }
-
-    .member {
-        margin: 25px;
-        font-size: 18px;
+        grid-template-columns: 250px 730px;
     }
 
     .chat-area {
-        grid-template-rows: 80px 1fr 100px;
+        height: 100%;
+        width: 730px;
+    }
+}
+
+@media(max-width: 1050px) {
+    main {
+        width: 800px;
+
+        grid-template-columns: 180px 600px;
+    }
+
+    .members-joined {
+        grid-template-rows: 60px 440px;
+        position: relative;
+    }
+
+    .topic {
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+
+    .member {
+        font-size: 14px;
+    }
+
+    .chat-area {
+        height: 100%;
+        width: 100%;
+        grid-template-rows: 60px 1fr 60px;
+        position: relative;
     }
 
     header {
-        height: 80px;
-        font-size: 26px;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* the whole card that holds the message */
+    .message-holder {
+        margin: 10px 20px;
     }
 
     /* the text inside the message card */
     .message {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     /* name of the messenger and the time at which he sent the message */
     .about {
+        gap: 5px;
+    }
+
+    /* name of the message sender */
+    .name {
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 10px;
+    }
+
+    footer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .input-field input {
+        font-size: 14px;
+
+        padding: 8px 15px;
+        margin-right: 30px;
+    }
+
+    .input-field button {
+        height: 25px;
+        width: 25px;
+        bottom: 3px;
+        right: 4px;
+
         font-size: 14px;
     }
 
+    .input-field button i {
+        cursor: pointer;
+    }
 }
 
-@media (max-width: 750px) {
+@media(max-width: 800px) {
     main {
-        grid-template-columns: 00vw 100vw;
+        width: 400px;
+
+        grid-template-columns: 450px;
+        gap: 0px;
+    }
+
+    .members-joined {
+        display: none;
+    }
+
+    .chat-area {
+        width: 450px;
     }
 }
