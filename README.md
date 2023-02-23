@@ -1,7 +1,7 @@
 # chat.ly
 A Chatting website developed using node.js and socket.io
 
-![chat ly](https://user-images.githubusercontent.com/77121931/220987766-3ca7e863-cad3-4631-8da9-6ce4e5a62e55.png)
+![chat ly](https://github.com/samitkapoor/chat.ly/blob/main/preview/chat.ly.png)
 
 
 https://user-images.githubusercontent.com/77121931/219793281-334dc2e1-0e9f-4f0b-889f-69b7a7ea15fa.mp4
