@@ -1,12 +1,9 @@
 # chat.ly
 A Chatting website developed using node.js and socket.io
 
-# Screenshots of the project
-|Login Window | Chat Room window |
-|:-----------:|:----------------:|
-![image](https://user-images.githubusercontent.com/77121931/219965503-49bb3a0e-4b74-4534-936b-89f7d94abb24.png)|![image](https://user-images.githubusercontent.com/77121931/219965624-306c6198-15bd-4f02-a98e-e7a22bf73e2b.png)
+![chat ly](https://user-images.githubusercontent.com/77121931/220987766-3ca7e863-cad3-4631-8da9-6ce4e5a62e55.png)
 
-# Video Preview
+
 https://user-images.githubusercontent.com/77121931/219793281-334dc2e1-0e9f-4f0b-889f-69b7a7ea15fa.mp4
 
 ## Follow the steps below to run this project
